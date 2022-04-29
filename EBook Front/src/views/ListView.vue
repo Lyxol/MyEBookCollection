@@ -8,7 +8,7 @@ export default {
     mounted() {
         //debug
         for (let i = 0; i < 3; i++) {
-            let book = new EbookModel(i, "Test" + i, i + 1 * 10, "this is a test", "test", "Lyxol");
+            let book = new EbookModel(i, "Test" + i, "this is a test", "test", "Lyxol");
             this.listBook.push(book);
         }
     },

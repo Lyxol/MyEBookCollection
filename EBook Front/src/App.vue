@@ -77,6 +77,15 @@ main {
   ;
 }
 
+form {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  padding: 1vh;
+  background-color: var(--colorOne);
+  border-radius: 20px;
+}
+
 footer {
   color: white;
   background-color: var(--colorTwo);
