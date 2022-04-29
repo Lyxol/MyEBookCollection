@@ -3,12 +3,16 @@ export default {
     data: () => ({
         email: "",
         password: ""
-    })
+    }),methods:{
+        validateLogin(){
+
+        }
+    }
 }
 </script>
 <template>
     <h2>Log-in</h2>
-    <form action="" id="loginForm">
+    <form @submit="validateLogin" id="loginForm">
         <label for="email">Email:</label>
         <input type="email" v-model="email">
         <label for="password">Password:</label>
