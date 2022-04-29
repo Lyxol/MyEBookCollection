@@ -41,10 +41,10 @@ input[type="file"] {
     display: none;
 }
 
-#addButton,
+button,
 input[type="button"] {
     border-radius: 15px;
-    padding: 10px;
+    padding: 5px;
     border: none;
 }
 

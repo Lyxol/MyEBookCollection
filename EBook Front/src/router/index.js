@@ -2,7 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import ListView from '../views/ListView.vue'
 import Add from '../views/Add.vue'
 import Login from '../views/Login.vue'
-import Signin from '../views/Signin.vue'
+import Signup from '../views/Signup.vue'
 import Edition from '../views/Edition.vue'
 
 const router = createRouter({
@@ -24,9 +24,9 @@ const router = createRouter({
       component: Login
     },
     {
-      path: '/signin',
-      name: 'signin',
-      component: Signin
+      path: '/signup',
+      name: 'signup',
+      component: Signup
     }, {
       path: '/edit',
       name: 'edit',
