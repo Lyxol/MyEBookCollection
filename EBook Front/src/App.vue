@@ -1,19 +1,18 @@
 <script setup>
-import { RouterLink, RouterView } from 'vue-router'
 </script>
 
 <template>
   <header>
     <h1>My E-Book Collection</h1>
     <nav>
-      <RouterLink to="/">Home</RouterLink>
-      <RouterLink to="/add">Add a book</RouterLink>
-      <RouterLink to="/login">Log in</RouterLink>
-      <RouterLink to="/signin">Sign in</RouterLink>
+      <router-link to="/">Home</router-link>
+      <router-link to="/add">Add a book</router-link>
+      <router-link to="/login">Log in</router-link>
+      <router-link to="/signin">Sign in</router-link>
     </nav>
   </header>
   <main>
-    <RouterView />
+    <router-view/>
   </main>
   <footer>
     <p>2022</p>
@@ -26,12 +25,13 @@ import { RouterLink, RouterView } from 'vue-router'
 *::after {
   margin: 0;
   padding: 0;
+  font-family: 'Roboto', sans-serif;
   --colorOne: hsl(240, 62%, 14%);
   --colorTwo: hsl(0, 100%, 22%);
 }
 
-#app{
-  background-color: hsla(0, 0%, 0%, 0.87) ;
+#app {
+  background-color: hsla(0, 0%, 0%, 0.87);
 }
 
 header {
@@ -44,7 +44,7 @@ header {
 
 h1 {
   color: white;
-  padding-left:1vw ;
+  padding-left: 1vw;
 }
 
 nav {
@@ -59,7 +59,7 @@ nav a {
   padding-bottom: 1.5vh;
 }
 
-nav a:hover{
+nav a:hover {
   background-color: var(--colorTwo);
 }
 
@@ -69,7 +69,8 @@ main {
   margin-right: auto;
   min-height: 100vh;
   color: white;
-  margin-top:  5vh; ;
+  margin-top: 5vh;
+  ;
 }
 
 footer {
