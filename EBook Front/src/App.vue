@@ -6,13 +6,11 @@
     <h1>My E-Book Collection</h1>
     <nav>
       <router-link to="/">Home</router-link>
-      <router-link to="/add">Add a book</router-link>
       <router-link to="/login">Log in</router-link>
-      <router-link to="/signin">Sign in</router-link>
     </nav>
   </header>
   <main>
-    <router-view/>
+    <router-view />
   </main>
   <footer>
     <p>2022</p>
@@ -26,8 +24,8 @@
   margin: 0;
   padding: 0;
   font-family: 'Roboto', sans-serif;
-  --colorOne: hsl(240, 62%, 14%);
-  --colorTwo: hsl(0, 100%, 22%);
+  --colorOne: hsl(206, 100%, 26%);
+  --colorTwo: hsl(231, 100%, 15%);
 }
 
 #app {
@@ -45,6 +43,12 @@ header {
 h1 {
   color: white;
   padding-left: 1vw;
+}
+
+h2 {
+  display: flex;
+  justify-content: center;
+  margin: 5vh;
 }
 
 nav {
