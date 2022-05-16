@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "This project was bootstrapped with Fastify-CLI.",
   "main": "app.js",
+  "type": "module",
   "directories": {
     "test": "test"
   },
@@ -20,7 +21,9 @@
     "fastify-autoload": "^3.10.0",
     "fastify-cli": "^2.15.0",
     "fastify-plugin": "^3.0.0",
-    "fastify-sensible": "^3.1.2"
+    "fastify-sensible": "^3.1.2",
+    "mysql2": "^2.3.3",
+    "sequelize": "^6.19.0"
   },
   "devDependencies": {
     "tap": "^15.1.6"
