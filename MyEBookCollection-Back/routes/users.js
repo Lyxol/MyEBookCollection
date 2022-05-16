@@ -1,6 +1,8 @@
 'use strict'
+import { sequelize } from "../database/database"
+import { EBook_User } from "../database/model"
 
-module.exports = async function (fastify, opts) {
+export default async function (fastify, opts) {
     fastify.get('/', async function (request, reply) {
         return { user: true }
     })
